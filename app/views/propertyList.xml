@@ -1,0 +1,10 @@
+<Alloy>
+    <Collection src="webProperties" />
+	<Window title="Property">
+		<TableView dataCollection="webProperties" dataFilter="filterFunction" onClick="propertyClick">
+			<TableViewRow layout="vertical" sl_id="{id}">
+					<Label text="{propertyname}" top="5dp" bottom="5" left="50" />
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

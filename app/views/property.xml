@@ -1,0 +1,30 @@
+<Alloy>
+    <Collection src="webProperties" />
+	<Window id="win" title="Estate Inforamtion" backgroundColor="white" exitOnClose="true" fullscreen="false">
+		<RightNavButton platform="ios"><Button title="Like/Unlike" onClick="showDialog" /></RightNavButton>
+	
+		<AlertDialog id="dialog" onClick="doClick" title="Delete" message="abc" cancel="1">
+			<ButtonNames>
+				<ButtonName>Confirm</ButtonName>
+				<ButtonName>Cancel</ButtonName>
+				<ButtonName>Help</ButtonName>
+			</ButtonNames>
+		</AlertDialog>
+			
+			
+		<TableView top="30dp" dataCollection="webProperties" dataFilter="filterFunction">
+			<TableViewRow layout="vertical">
+					<ImageView image="{imageurl}" bottom="10dp" left="10dp" right="10dp"/>
+					<Button id="button" onClick="btClick9" title="detailed address" bottom="10dp" left="10dp" sl_estate="{estate}" sl_propertyname="{propertyname}" />
+					<TextArea value="{propertyname}" bottom="10dp" left="5dp" />
+					<Label text="Estate: {estate}" bottom="10dp" left="10dp" />
+					<Label text="Bedrooms: {bedrooms}" bottom="10dp" left="10dp" />
+					<Label text="Gross Area: {grossarea}" bottom="10dp" left="10dp" />
+					<Label text="Expected Tenants: {expectedtenants}" bottom="10dp" left="10dp" />
+					<Label text="Rent: ${rent}" bottom="10dp" left="10dp" />
+					<Label text="Created: {createdAt}" bottom="10dp" left="10dp" />
+					<Label text="Updated: {updatedAt}" bottom="10dp" left="10dp" />
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

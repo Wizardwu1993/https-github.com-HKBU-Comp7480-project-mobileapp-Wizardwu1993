@@ -1,0 +1,23 @@
+"Window": {
+	backgroundColor: "#81BEF7"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+}
+
+"TextArea": {
+    editable:false,
+    scrollable:false,
+    font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	}, 
+} 

@@ -1,0 +1,5 @@
+<Alloy>
+	<Window navBarHidden="false" id="win">
+		<Module id="mapView" module="ti.map" method="createView" userLocation="true" />				
+	</Window>		
+</Alloy>

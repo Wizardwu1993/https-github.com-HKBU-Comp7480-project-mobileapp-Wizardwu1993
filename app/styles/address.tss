@@ -1,0 +1,36 @@
+"Window": {
+	backgroundColor: "#81BEF7"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#FFFFFF",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+// "#CityOneShatin": {
+    // latitude: 22.386389,
+    // longitude: 114.203889, 
+    // title: "City One Shatin",
+    // subtitle: "沙田第一城" 
+// }
+// 
+// "#TinMaCourt": {
+    // latitude: 22.342588,
+    // longitude: 114.185062, 
+    // title: "Tin Ma Court",
+    // subtitle: "天马苑" 
+// }
+// 
+// "#FestivalCity": {
+    // latitude: 22.369200,
+    // longitude: 114.174300, 
+    // title: "Festival City",
+    // subtitle: "名城" 
+// }
+

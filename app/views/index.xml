@@ -1,0 +1,83 @@
+<Alloy>
+	<TabGroup>
+		
+		
+		
+		
+		<Tab title="Hello" icon="KS_nav_ui.png">
+			<Window title="Welcome!">
+				<!-- <Label>I am Window 1</Label> -->
+				<TableView dataCollection="property" dataTransform="transformFunction">
+    				<TableViewRow layout="vertical">
+        			<ImageView image="{imageurl}" top="30dp" left="20dp" right="20dp" />
+							<TextArea value="{propertyname}" left="50dp" top="10dp" />
+							<Label text="Estate: {estate}" left="55dp" bottom="10dp" />
+							<Label text="Gross Area: {grossarea}" left="55dp" bottom="10dp" />
+							<Label text="Rent: ${rent}" left="55dp" bottom="30dp" />
+    				</TableViewRow>
+				</TableView>
+			</Window>
+		</Tab>
+		
+		
+		
+		
+		
+		
+		<Tab title="Rooms" icon="KS_nav_views.png">
+			<Window title="Property">
+				<!-- <Label>I am Window 2</Label> -->
+			<TableView onClick="tableClick1"> 
+    			<TableViewSection headerTitle="$15000-">
+        			<TableViewRow title="2 Bedrooms-" dept_id="a"/> 
+    			
+        			<TableViewRow title="3 Bedrooms+" dept_id="b"/>
+    			</TableViewSection> 
+			
+    			<TableViewSection headerTitle="$15000+" >
+        			<TableViewRow title="2 Bedrooms-" dept_id="c"/> 
+    		
+        			<TableViewRow title="3 Bedrooms+" dept_id="d"/>
+    			</TableViewSection>
+    		</TableView>
+			</Window>
+		</Tab>
+		
+		<Tab title="area" icon="KS_nav_views.png">
+			<Window title="Area" id="win1">
+								<!-- <Label>I am Window 3</Label> -->
+				<TableView dataCollection="estates" dataTransform="transformFunction1" onClick="tableClick2">
+					<TableViewSection headerTitle="{District}">
+						<TableViewRow layout="vertical" op_id="{Name}">
+							<Label text="{Name}" left="15" />
+						</TableViewRow>
+					</TableViewSection>					
+				</TableView>
+			</Window>
+		</Tab>
+		
+		<Tab title="Map" icon="KS_nav_views.png" id="aaa">
+			<Window title="Map view" navBarHidden="true" id="win2">
+								<!-- <Label>I am Window 4</Label> -->
+				<Module dataCollection="estates" dataTransform="transformFunction2" id="mapView" module="ti.map" method="createView" userLocation="true" onClick="mapClicked" />	
+			</Window>
+		</Tab>
+		
+		<Tab title="User" icon="KS_nav_views.png">
+			<Window title="Hello">
+								<!-- <Label>I am Window 5</Label> -->
+				<TableView onClick="userClick">
+					 <TableViewSection headerTitle="Username">
+					 	<TableViewRow title="Logoff/Login" op="ll"/> 
+                     </TableViewSection> 
+                     <TableViewSection>
+					 	<TableViewRow title="Interested Property" op="ip"/> 
+                     </TableViewSection>
+                     <TableViewSection>
+					 	<TableViewRow title="About Us" op="au"/> 
+                     </TableViewSection>
+                </TableView>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

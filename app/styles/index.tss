@@ -1,0 +1,32 @@
+"Window": {
+	backgroundColor: "#81BEF7"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#FFFFFF",
+	font: {
+		fontSize: 20,
+	},
+	textAlign: 'center'
+} 
+
+"TextArea": {
+	editable:false,
+    scrollable:false,
+    font: {
+		fontSize: 30,
+		
+	}, 
+} 
+
+//setting the original position for user
+"#mapView": { 
+    region: {
+        latitude: 22.337827, 
+        longitude: 114.181962, 
+        latitudeDelta: 0.09, 
+        longitudeDelta: 0.09
+    }
+}
